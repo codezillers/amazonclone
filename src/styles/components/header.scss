@@ -1,4 +1,105 @@
 .header {
+  .top {
+    height: 80px;
     background-color: $headerDark;
     color: white;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 2fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    margin-top: 8px;
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+    object-fit: contain;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+
+    img {
+      padding: 1px 8px 0 6px;
+      margin: 1px;
+    }
+  }
+  .input-wrap {
+    display: flex;
+    position: static;
+    background-color: #fdbd68;
+    cursor: pointer;
+    border-radius: 6px;
+    align-items: center;
+    height: 40px;
+    flex: 1 1 auto;
+  }
+
+  input {
+    padding: 8px;
+    height: 100%;
+    width: 24px;
+    flex: 1 1 auto;
+    border-radius: 6px 0 0 6px;
+    &:focus {
+      outline: none;
+      padding: 0 16px;
+    }
+  }
+
+  .search-icon {
+    height: 48px;
+    padding: 16px;
+    color: black;
+  }
+
+  .top-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+
+    .items {
+      margin-left: 0;
+      padding-right: 9px;
+      padding-left: 9px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .items p:last-child {
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+  .basket-text {
+    display: none;
+  }
+  .basket-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  //   Header Media Query
+
+  @media (min-width: 768px) {
+    .logo {
+      flex-grow: 0;
+    }
+    .basket-text {
+      display: inline-block;
+      margin-top: 8px;
+      right: 40px;
+      height: 16px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    .input-wrap:hover {
+      background-color: #f3a846;
+    }
+  }
 }
