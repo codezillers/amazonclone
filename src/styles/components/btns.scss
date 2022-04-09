@@ -1,0 +1,22 @@
+button {
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: $colorPrimary;
+    padding: .5rem 4rem;
+    border-radius: 10rem;
+    border: none;
+}
+
+.btn-link {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: $linkColor;
+
+    &:hover {
+        color: $linkHoverColor;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,11 @@
+// importing variable file
+@import './styles/variables';
+// importing mais styles
+@import './styles/main.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
