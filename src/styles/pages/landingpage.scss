@@ -6,6 +6,35 @@
     &  .container {
         grid-column: 2/10;
         background-image: linear-gradient(to bottom, $amazonGreen, $amazonGray 20%);
-        height: 100vh;
+        height: 100%;
+
+        &  .categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.5rem;
+            margin-top: -25%;
+            position: relative;
+            z-index: 100;
+            padding: 1.5rem;
+
+
+            &  .category {
+                background-color: white;
+                padding: 1.5rem;
+
+                &  .card-image-container-multiple {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    align-items: center;
+                    grid-gap: 1rem;
+                    padding: 3rem 0;
+                    height: 100%;
+
+                    &  img {
+                        height: 6rem;
+                    }
+                }
+            }
+        }
     }
 }

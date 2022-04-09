@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Categories from "./Categories";
 const landing1 = require("../../assets/landing1.jpg");
 const landing2 = require("../../assets/landing2.jpg");
 const landing3 = require("../../assets/landing3.jpg");
@@ -24,6 +25,9 @@ const LandingPage = () => {
             <img src={landing4} alt="" />
           </div>
         </Carousel>
+        <div>
+          <Categories/>
+        </div>
       </div>
     </div>
   );
