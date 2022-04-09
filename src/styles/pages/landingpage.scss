@@ -1,10 +1,11 @@
 .landing-page {
     display: grid;
     grid-template-columns: minmax(2rem, 1fr) repeat(8, minmax(6rem, 12rem)) minmax(2rem, 1fr); 
+    background-color: $amazonGray;
 
     &  .container {
         grid-column: 2/10;
-        background-color: rgba(43, 255, 0, 0.188);
-        padding: 1rem;
+        background-image: linear-gradient(to bottom, $amazonGreen, $amazonGray 20%);
+        height: 100vh;
     }
 }
