@@ -35,6 +35,25 @@
                     }
                 }
             }
+
         }
+            &  .horiz-category {
+                padding: 1.5rem;
+                background-color: white;
+                margin: 1.5rem;
+
+                &  .list {
+                    display: flex;
+                    align-items: center;
+
+                    & .item {
+                        margin: 1rem;
+
+                        & img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
     }
 }
