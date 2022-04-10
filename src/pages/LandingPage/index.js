@@ -11,22 +11,29 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="container">
-        <Carousel autoPlay showThumbs={false} showArrows={false} showStatus={false}>
+        <Carousel
+          autoPlay
+          infiniteLoop
+          showThumbs={false}
+          showArrows={false}
+          showStatus={false}
+          interval={5000}
+        >
           <div>
-            <img src={landing1} alt="" />
+            <img loading="lazy" src={landing1} alt="" />
           </div>
           <div>
-            <img src={landing2} alt="" />
+            <img loading="lazy" src={landing2} alt="" />
           </div>
           <div>
-            <img src={landing3} alt="" />
+            <img loading="lazy" src={landing3} alt="" />
           </div>
           <div>
-            <img src={landing4} alt="" />
+            <img loading="lazy" src={landing4} alt="" />
           </div>
         </Carousel>
         <div>
-          <Categories/>
+          <Categories />
         </div>
       </div>
     </div>

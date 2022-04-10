@@ -35,7 +35,7 @@ const Header = () => {
           <div className="items flex relative">
             <span className="nav-cart-count absolute">0</span>
             <ShoppingCartIcon style={{ height: "30", marginTop: "12" }} />
-            <p className="basket-text hidden">Cart</p>
+            <p className="cart-text hidden">Cart</p>
           </div>
         </div>
       </div>
