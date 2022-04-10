@@ -1,0 +1,17 @@
+.search-result {
+
+    &  .header {
+        border-bottom: 1px solid $amazonBorderColor;
+        padding: .5rem;
+        font-size: .8rem;
+    }
+
+    &  .search-container {
+        display: flex;
+        padding: 2rem 0;
+
+        &  .filters {
+            width: 20%;
+        }
+    }
+}

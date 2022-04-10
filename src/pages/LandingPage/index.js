@@ -11,7 +11,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="container">
-        <Carousel autoPlay showThumbs={false} showArrows={false} showStatus={false}>
+        <Carousel infiniteLoop autoPlay showThumbs={false} showArrows={false} showStatus={false}>
           <div>
             <img src={landing1} alt="" />
           </div>
